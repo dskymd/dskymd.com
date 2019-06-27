@@ -38,7 +38,8 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
+// import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo: () => import('~/components/Logo.vue')
@@ -48,14 +49,7 @@ export default {
 
 <style lang="scss">
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   a {
-    color: #f90;
   }
 }
 
