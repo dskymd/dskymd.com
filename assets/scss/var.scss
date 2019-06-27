@@ -1,6 +1,12 @@
 // font
 // @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
+
+$font-playfair: 'Playfair Display', serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-oswald: 'Oswald', sans-serif;
+
+
 //container 
 // for mobile 
 $screen__xxs: 320px;
@@ -44,7 +50,7 @@ $color-orange: #ff6600;
 $color-orange-hover: #ff2a00;
 $color-blue: #0092ab;
 $color-pale-blue: #ddf2ff;
-$color-yellow: #e2c200;
+$color-yellow: #ffeb3b; // #e2c200;
 
 
 
@@ -58,7 +64,7 @@ $color-yellow: #e2c200;
 
 // // normal
 // @mixin font-Roboto-400 {
-//   font-family: 'Roboto', sans-serif;
+//   'Roboto', sans-serif;
 //   font-weight: 400;
 // }
 

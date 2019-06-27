@@ -1,48 +1,52 @@
 <template>
-  <div class="container">
-    <h1>Accounts</h1>
-    <ul>
-      <li>
-        <a href="https://dskymd.com/portfolio">dskymd - Portfolio</a>
-      </li>
-      <li>
-        <a href="https://blog.dskymd.com">blog - dskymd.com</a>
-      </li>
-      <li>
-        <a href="https://github.com/dskymd">dskymd@github.com</a>
-      </li>
-      <li>
-        <a href="https://qiita.com/dskymd">dskymd@qiita.com</a>
-      </li>
-      <li>
-        <a href="https://instagram.com/dskymd">dskymd@instagram.com</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/dskymd">dskymd@twitter.com</a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/daisuke.yamada.7737769/">dskymd@facebook.com</a>
-      </li>
-    </ul>
-
-    <h1>Work</h1>
-    <ul>
-      <li>
-        <a href="https://bluelug.com/">bluelug.com</a>
-      </li>
-      <li>
-        <a href="https://t430.com">t430.com</a>
-      </li>
-    </ul>
-    <Logo />
-  </div>
+  <main class="main">
+    <div class="container gutter">
+      <div class="group">
+        <h1 class="group__title">Accounts</h1>
+        <ul>
+          <li>
+            <a href="https://dskymd.com/portfolio">dskymd - Portfolio</a>
+          </li>
+          <li>
+            <a href="https://blog.dskymd.com">blog - dskymd.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/dskymd">dskymd@github.com</a>
+          </li>
+          <li>
+            <a href="https://qiita.com/dskymd">dskymd@qiita.com</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/dskymd">dskymd@instagram.com</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dskymd">dskymd@twitter.com</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/daisuke.yamada.7737769/">dskymd@facebook.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="group">
+        <h1 class="group__title">Work</h1>
+        <ul>
+          <li>
+            <a href="https://bluelug.com/">bluelug.com</a>
+          </li>
+          <li>
+            <a href="https://t430.com">t430.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
 // import Logo from '~/components/Logo.vue'
 export default {
   components: {
-    Logo: () => import('~/components/Logo.vue')
+    // Logo: () => import('~/components/Logo.vue')
   }
 }
 </script>
@@ -50,27 +54,28 @@ export default {
 <style lang="scss">
 .container {
   a {
+    color: $color-orange;
   }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+.group {
+  display: grid;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .group__title {
+    // flex-basis: 200px;
+    padding: $gutter;
+    margin: 0 0 $gutter;
+    background-color: $color-yellow;
+  }
 
-.links {
-  padding-top: 15px;
+  ul {
+    list-style: none;
+    // padding: 0;
+    // margin: 0;
+  }
+  li {
+    font-size: 1.4rem;
+    padding: $gutter / 2 0;
+  }
 }
 </style>
