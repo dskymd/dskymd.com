@@ -13,9 +13,9 @@ export default {}
 <style lang="scss">
 .header {
   background-color: $color-white;
-  font-size: 3rem;
   padding: $gutter;
   h1 {
+    font-size: 1.8rem;
     font-family: $font-playfair;
     // color: $color-white;
   }
