@@ -34,13 +34,16 @@
             <a href="https://dskymd.com/portfolio">dskymd - Portfolio</a>
           </li>
           <li>
-            <a href="https://blog.dskymd.com">blog - blog.dskymd.com</a>
+            <a href="https://blog.dskymd.com"><i class="fab fa-wordpress-simple"></i> blog.dskymd.com</a>
           </li>
           <li>
-            <a href="https://github.com/dskymd">dskymd@github.com</a>
+            <a href="https://github.com/dskymd"><i class="fab fa-github"></i> github.com @dskymd</a>
           </li>
           <li>
-            <a href="https://qiita.com/dskymd">dskymd@qiita.com</a>
+            <a href="https://note.mu/dskymd">note.mu</a>
+          </li>
+          <li>
+            <a href="https://qiita.com/dskymd">qiita.com</a>
           </li>
           <li>
             <a href="https://instagram.com/dskymd"> <i class="fab fa-instagram"></i> instagram.com @dskymd </a>
@@ -107,7 +110,7 @@ export default {
       overflow: hidden;
       video {
         -o-object-fit: cover;
-        o : cover;
+        object-fit: cover;
         max-width: none;
         width: 100%;
         height: 100%;
