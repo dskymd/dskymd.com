@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <h1>dskymd</h1>
+      <h1>dskymd <i class="fab fa-vuejs"></i> </h1>
     </div>
   </header>
 </template>
