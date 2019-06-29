@@ -17,7 +17,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Playfair+Display:400,700|Roboto:400,500&display=swap' }
-    ]
+    ],
+    script: [{ src: 'https://kit.fontawesome.com/fdc02ad3eb.js' }]
   },
   /*
    ** Customize the progress-bar color
