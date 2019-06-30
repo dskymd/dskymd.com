@@ -2,8 +2,28 @@
   <main class="main">
     <div class="container gutter">
       <div class="group">
-        <h1 class="group__title">Work</h1>
-        <ul>
+        <h1 class="group__title">Skills</h1>
+        <div class="skills__body">
+          <ul class="skills__list">
+            <li>
+              JavaScript
+              <span class="small">(Nuxt.js, Vue.js, TypeScript)</span>
+            </li>
+            <li>
+              HTML, CSS
+              <span class="small">(SCSS, LESS)</span>
+            </li>
+            <li>Web Design</li>
+            <li>WordPress</li>
+            <li>Magento</li>
+            <li>English (TOEIC 685), Chinese (HKS 4)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="group">
+        <h1 class="group__title">Works</h1>
+        <ul class="works__list">
           <li>
             <div class="item item--video">
               <div class="thumb">
@@ -26,36 +46,6 @@
           </li>
         </ul>
       </div>
-
-      <div class="group">
-        <h1 class="group__title">Accounts</h1>
-        <ul>
-          <li>
-            <a href="https://dskymd.com/portfolio">dskymd - Portfolio</a>
-          </li>
-          <li>
-            <a href="https://blog.dskymd.com"><i class="fab fa-wordpress-simple"></i> blog.dskymd.com</a>
-          </li>
-          <li>
-            <a href="https://github.com/dskymd"><i class="fab fa-github"></i> github.com @dskymd</a>
-          </li>
-          <li>
-            <a href="https://note.mu/dskymd">note.mu</a>
-          </li>
-          <li>
-            <a href="https://qiita.com/dskymd">qiita.com</a>
-          </li>
-          <li>
-            <a href="https://instagram.com/dskymd"> <i class="fab fa-instagram"></i> instagram.com @dskymd </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/dskymd"> <i class="fab fa-twitter"></i> twitter.com @dskymd </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/daisuke.yamada.7737769/"> <i class="fab fa-facebook-square"></i> facebook @dskymd </a>
-          </li>
-        </ul>
-      </div>
     </div>
   </main>
 </template>
@@ -74,10 +64,13 @@ export default {
   a {
     color: $color-orange;
   }
+  // background: $color-yellow;
 }
 
 .group {
   display: grid;
+  padding: 0;
+  margin: 0 0 $gutter * 4;
 
   .group__title {
     // flex-basis: 200px;
@@ -85,15 +78,25 @@ export default {
     margin: 0 0 $gutter;
     // background-color: $color-yellow;
   }
+  ul.skills__list {
+    li {
+      font-size: 1.4rem;
+      padding: 0 0 $gutter / 2;
+    }
+  }
 
-  ul {
+  ul.works__list {
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  li {
-    font-size: 1.4rem;
-    padding: $gutter / 2 0;
+    // display: flex;
+    // flex-wrap: wrap;
+    li {
+      // @include flex-2-gutter;
+      font-size: 1.4rem;
+      padding: $gutter / 2 0;
+    }
   }
 
   .item {
@@ -102,8 +105,11 @@ export default {
     padding: $gutter;
     background: $color-white;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  }
-  .item--video {
+    // .item--video {
+    // width: 100%;
+    // background: $color-yellow3;
+    // overflow: hidden;
+    // }
     .thumb {
       width: 100%;
       height: 50vw;

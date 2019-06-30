@@ -1,11 +1,16 @@
 <template>
   <footer class="footer">
-    <div class="container">©️ dskymd</div>
+    <div class="container">
+      <accounts />
+      <!-- <span class="copyrights">© dskymd</span>️ -->
+    </div>
   </footer>
 </template>
 
 <script>
-export default {}
+export default {
+  components: { Accounts: () => import('~/components/accounts.vue') }
+}
 </script>
 
 <style lang="scss">
@@ -17,6 +22,9 @@ export default {}
   background-color: $color-black; // $color-yellow;
   .container {
     text-align: center;
+  }
+  .copyrights {
+    color: $color-gray;
   }
 }
 </style>
