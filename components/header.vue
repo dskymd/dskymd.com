@@ -15,7 +15,7 @@ export default {}
 
 <style lang="scss">
 .header {
-  background-color: $color-white;
+  // background-color: $color-white;
   padding: $gutter;
   h1 {
     font-size: 1.8rem;

@@ -15,15 +15,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-body {
-  // background-color: $color-yellow;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-</style>
+<style lang="scss"></style>

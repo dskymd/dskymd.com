@@ -1,6 +1,8 @@
 <template>
   <main class="main">
     <div class="container gutter">
+      <work-model />
+
       <div class="group">
         <h1 class="group__title">Skills</h1>
         <div class="skills__body">
@@ -16,7 +18,7 @@
             <li>Web Design</li>
             <li>WordPress</li>
             <li>Magento</li>
-            <li>English (TOEIC 685), Chinese (HKS 4)</li>
+            <!-- <li>English (TOEIC 685), Chinese (HKS 4)</li> -->
           </ul>
         </div>
       </div>
@@ -54,6 +56,7 @@
 // import Logo from '~/components/Logo.vue'
 export default {
   components: {
+    workModel: () => import('~/components/work__modal.vue')
     // Logo: () => import('~/components/Logo.vue')
   }
 }
