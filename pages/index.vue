@@ -108,11 +108,11 @@ export default {
   margin: 0 0 $gutter;
   // background-color: $color-yellow;
 }
-ul.skills__list {
-  li {
-    //
-  }
-}
+// ul.skills__list {
+//   li {
+//     //
+//   }
+// }
 
 ul.works__list {
   width: 100%;

@@ -18,11 +18,7 @@
       </li>-->
       <li>
         <a href="https://note.mu/dskymd">
-          <img
-            src="~/assets/images/icon__note-symbol--white.svg"
-            alt="note"
-            class="img__icon--note"
-          />
+          <img src="~/assets/images/icon__note-symbol--white.svg" alt="note" class="img__icon--note" />
         </a>
       </li>
 
