@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footer {
   position: absolute;
   width: 100%;
@@ -27,4 +27,7 @@ export default {
     color: $color-gray;
   }
 }
+
+// @media (min-width: $screen__m) {
+// }
 </style>
