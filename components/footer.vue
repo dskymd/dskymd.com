@@ -17,7 +17,7 @@ export default {
 .footer {
   position: absolute;
   width: 100%;
-  bottom: 0%;
+  bottom: 0;
   padding: $gutter;
   background-color: $color-black; // $color-yellow;
   .container {
@@ -30,4 +30,11 @@ export default {
 
 // @media (min-width: $screen__m) {
 // }
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: $color-black;
+    border-top: 1px solid $color-gray;
+  }
+}
 </style>

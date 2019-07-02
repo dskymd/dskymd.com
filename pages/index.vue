@@ -16,8 +16,7 @@
               <span class="small">(SCSS, LESS)</span>
             </li>
             <li>Web Design</li>
-            <li>WordPress</li>
-            <li>Magento</li>
+            <li>WordPress, Magento</li>
             <!-- <li>English (TOEIC 685), Chinese (HKS 4)</li> -->
           </ul>
         </div>
@@ -183,6 +182,12 @@ ul.favorites__list {
     li {
       @include flex-3-gutter;
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .item {
+    background-color: #000; // $color-black;
   }
 }
 </style>
