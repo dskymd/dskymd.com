@@ -1,6 +1,6 @@
 <template>
-  <div class="work__model__overlay">
-    <div class="work__model"></div>
+  <div class="works__model__overlay">
+    <div class="works__model"></div>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.work__model__overlay {
+.works__model__overlay {
   &.show {
     opacity: 1;
     visibility: visible;
@@ -25,7 +25,7 @@ export default {}
   z-index: 100;
   padding: $gutter;
 }
-.work__model {
+.works__model {
   background-color: $color-white;
   padding: $gutter * 2;
   width: 100%;

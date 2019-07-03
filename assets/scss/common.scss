@@ -25,8 +25,8 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-html,
-body {
+html.modalopened,
+body.modalopened {
   // for no-scroll when modal
   overflow: auto;
   height: 100%;

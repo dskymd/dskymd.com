@@ -3,41 +3,24 @@
     <ul class="accounts__list">
       <li>
         <a href="https://instagram.com/dskymd">
-          <i class="fab fa-instagram"></i>
+          <img src="~/assets/images/icon__instagram--white.svg" alt="instagram" class="img__icon" />
         </a>
       </li>
       <li>
         <a href="https://twitter.com/dskymd">
-          <i class="fab fa-twitter"></i>
+          <img src="~/assets/images/icon__twitter--white.svg" alt="twitter" class="img__icon" />
         </a>
       </li>
-      <!-- <li>
-            <a href="https://github.com/dskymd">
-              <i class="fab fa-github"></i>
-            </a>
-      </li>-->
       <li>
         <a href="https://note.mu/dskymd">
           <img src="~/assets/images/icon__note-symbol--white.svg" alt="note" class="img__icon--note" />
         </a>
       </li>
-
-      <!-- <li>
-            <a href="https://www.facebook.com/daisuke.yamada.7737769/">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-      </li>-->
-      <!-- <li>
-            <a href="https://dskymd.com/portfolio">Portfolio</a>
-      </li>-->
       <li>
         <a href="https://qiita.com/dskymd">
           <img src="~/assets/images/icon__qiita--white.svg" alt="qiita" class="img__icon--qiita" />
         </a>
       </li>
-      <!-- <li>
-            <a href="https://blog.dskymd.com"> <i class="fab fa-wordpress-simple"></i> blog.dskymd.com </a>
-      </li>-->
     </ul>
   </div>
 </template>
@@ -65,7 +48,7 @@ a {
   padding: $gutter / 2;
 }
 .img__icon {
-  height: 21px;
+  height: 14px;
   width: auto;
 }
 .img__icon--note {
@@ -80,6 +63,9 @@ a {
 @media (min-width: $screen__m) {
   a {
     font-size: 1.8rem;
+  }
+  .img__icon {
+    height: 18px;
   }
   .img__icon--note {
     height: 26px;

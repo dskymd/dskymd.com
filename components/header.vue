@@ -3,11 +3,11 @@
     <div class="header__wrapper">
       <div class="container">
         <h1>
-          😗 dskymd 😗
+          <span class="emoji">😗</span> dskymd <span class="emoji">😗</span>
           <span class="small">Front-end Developer 🦐</span>
         </h1>
         <div class="menu">
-          <button class="button__menu" @click="toggleMenu">menu</button>
+          <!-- <button class="button__menu" @click="toggleMenu">menu</button> -->
         </div>
       </div>
     </div>
@@ -78,6 +78,12 @@ button.button__menu {
   }
   .small {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: $screen__xs) {
+  .emoji {
+    display: none;
   }
 }
 
