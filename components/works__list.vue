@@ -4,7 +4,7 @@
       <div class="item">
         <div class="thumb">
           <nuxt-link to="works/430/">
-            <img src="images/work__thumb-430.jpg" alt="t430.com" />
+            <img src="/images/work__thumb-430.jpg" alt="t430.com" />
           </nuxt-link>
         </div>
         <div class="item__card">

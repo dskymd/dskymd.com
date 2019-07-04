@@ -228,14 +228,15 @@ a.button--disabled {
   }
 
   .main {
-    padding-top: 74px;
+    padding-top: $header-height--m + ($gutter * 2);
   }
 }
+ 
 
 // Large devices (desktops, 992px and up)
 @media (min-width: $screen__l) {
   .main {
-    padding-top: 98px;
+    padding-top: $header-height--l + ($gutter * 2);
   }
 }
 

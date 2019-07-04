@@ -3,7 +3,8 @@
     <div class="header__wrapper">
       <div class="container">
         <h1>
-          <span class="emoji">😗</span> dskymd <span class="emoji">😗</span>
+          <span class="emoji">😗</span> dskymd
+          <span class="emoji">😗</span>
           <span class="small">Front-end Developer 🦐</span>
         </h1>
         <div class="menu">

@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <div class="container gutter">
-      <works-model />
+      <!-- <works-model /> -->
 
       <div class="group">
         <h1 class="group__title">Skills</h1>
@@ -72,8 +72,8 @@
 // import Logo from '~/components/Logo.vue'
 export default {
   components: {
-    worksList: () => import('~/components/works__list.vue'),
-    worksModel: () => import('~/components/works__modal.vue')
+    worksList: () => import('~/components/works__list.vue')
+    // worksModel: () => import('~/components/works__modal.vue')
     // Logo: () => import('~/components/Logo.vue')
   }
 }

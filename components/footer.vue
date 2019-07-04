@@ -17,6 +17,7 @@ export default {
 .footer {
   position: fixed;
   width: 100%;
+  left: 0;
   bottom: 0;
   padding: $gutter;
   background-color: $color-black; // $color-yellow;
