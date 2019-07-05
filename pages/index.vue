@@ -25,12 +25,13 @@
       <div class="group">
         <h1 class="group__title">Works</h1>
         <div class="description">
+          <!-- <p class="wip">📝 Now updateing...</p> -->
           <p>
-            仕事ではいつも新しい試みや他とは違う何かができないか心がけています。
+            仕事ではいつも新しい試みや、世の中のパターンになっているのことが本当にベストなのか、他とは違う何かができないかなど心がけています。
             <br />開発者目線の部分もそうですが、最終的に製品を使う人の目線でも快適でよりよい体験をしてもらうための施策を検討して実装しています。
           </p>
         </div>
-        <works-list></works-list>
+        <works-list />
       </div>
 
       <div class="group">
@@ -109,6 +110,10 @@ export default {
 //     //
 //   }
 // }
+
+.wip {
+  padding: $gutter 0;
+}
 
 ul.favorites__list {
   list-style: none;

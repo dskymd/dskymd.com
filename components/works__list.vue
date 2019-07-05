@@ -4,7 +4,7 @@
       <div class="item">
         <div class="thumb">
           <nuxt-link to="works/430/">
-            <img src="/images/work__thumb-430.jpg" alt="t430.com" />
+            <img src="/images/works__430__thumb.jpg" alt="t430.com" />
           </nuxt-link>
         </div>
         <div class="item__card">
@@ -16,7 +16,7 @@
         </div>
       </div>
     </li>
-    <li>
+    <!-- <li>
       <div class="item item--video">
         <div class="thumb">
           <nuxt-link to="works/430-contact/">
@@ -65,7 +65,7 @@
           </div>
         </div>
       </div>
-    </li>
+    </li>-->
   </ul>
 </template>
 
@@ -116,18 +116,6 @@ ul.works__list {
     a {
       color: $color-black;
     }
-    .tags {
-      padding: $gutter / 1.5 0 0;
-      span {
-        display: inline-block;
-        padding: 4px 8px;
-        margin: 0;
-        background-color: $color-black;
-        color: $color-yellow;
-        border-radius: 4px;
-        font-size: 1rem;
-      }
-    }
   }
 }
 
@@ -160,7 +148,7 @@ ul.works__list {
 
 @media (prefers-color-scheme: dark) {
   .item {
-    background-color: #000; // $color-black;
+    background-color: $color-black-000; // $color-black;
   }
 }
 </style>

@@ -3,9 +3,11 @@
     <div class="header__wrapper">
       <div class="container">
         <h1>
-          <span class="emoji">😗</span> dskymd
-          <span class="emoji">😗</span>
-          <span class="small">Front-end Developer 🦐</span>
+          <nuxt-link to="/">
+            <span class="emoji">😗</span> dskymd
+            <span class="emoji">😗</span>
+            <span class="small">Front-end Developer 🦐</span>
+          </nuxt-link>
         </h1>
         <div class="menu">
           <!-- <button class="button__menu" @click="toggleMenu">menu</button> -->
@@ -46,8 +48,13 @@ export default {
 }
 h1 {
   font-size: 1.8rem;
-  font-family: $font-playfair;
+  // font-family: $font-playfair;
+  font-family: $font-roboto-slab;
+  font-weight: 400;
   // color: $color-white;
+  a {
+    color: $color-black;
+  }
 }
 .small {
   font-size: 1.2rem;
@@ -82,10 +89,10 @@ button.button__menu {
   }
 }
 
-@media (max-width: $screen__xs) {
-  .emoji {
-    display: none;
-  }
+@media (max-width: $screen__xxs) {
+  // .emoji {
+  //   display: none;
+  // }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -94,6 +101,12 @@ button.button__menu {
   }
   .header__wrapper {
     border-color: $color-yellow;
+  }
+
+  h1 {
+    a {
+      color: $color-yellow;
+    }
   }
 
   button.button__menu {

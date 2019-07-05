@@ -16,7 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Playfair+Display:400,700|Roboto:400,500&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Playfair+Display:400,700|Roboto:400,500|Roboto+Slab&:400,700&display=swap' }
     ],
     script: [{ src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=es6' }, { src: 'https://kit.fontawesome.com/fdc02ad3eb.js' }]
   },

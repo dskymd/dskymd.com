@@ -20,4 +20,8 @@ export default {
 <style lang="scss">
 @import '~/assets/scss/var.scss';
 @import '~/assets/scss/common.scss';
+
+.page__404 p {
+  font-weight: 700;
+}
 </style>

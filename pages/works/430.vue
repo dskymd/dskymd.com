@@ -2,25 +2,96 @@
   <main class="main">
     <div class="container gutter">
       <div class="work__detail">
-        <div class="work__title">430 - Fourthiry Official Site.</div>
-        <div class="works__images">
-          <img src="/images/work__thumb-430.jpg" alt="430" />
+        <h2 class="content__title">Works</h2>
+        <h1 class="work__title">430 - Fourthiry Official Site.</h1>
+
+        <div class="works__cover">
+          <img src="/images/works__430__cover.jpg" alt="430" />
         </div>
+
         <div class="work__description">
           <ul class="featured">
-            <li>Nuxt.js</li>
+            <li>Nuxt.jsによるシンプルで軽快な動作のウェブサイト</li>
+            <li>商品データのキャッシュ化によるレスポンスの速さ</li>
+            <li>WordPressによる更新のしやすさ</li>
           </ul>
+
+          <p>BMXライダーを中心としたストリートアパレルブランドのウェブサイトです。Nuxt.jsを使い、シンプルながらも軽量な動作を目指しました。</p>
+          <p>
+            年３回追加されるコレクションごとに洋服が見れるよう設計をしています。更新はクライアント側でも更新しやすいようにWordPressを、お知らせの更新も同一のシステムで行えるのでその辺りの管理は楽でした。
+          </p>
+          <p>
+            商品の詳細情報を素早く表示させるため、wpからのjsonデータをphpにてキャッシュ化・不要な情報の削除をして読み込んでいます。それにより商品から商品への快適なブラウジングを実現できました。
+          </p>
+          <p>
+            ほか、動的なページとしてはお知らせページや問い合わせフォームにGoogle reCAPTCHA V3を導入しました。問い合わせフォームについての詳細は
+            <nuxt-link to="/works/430-contact">こちら</nuxt-link>でご紹介しています。
+          </p>
+          <p class="url">
+            <a href="https://t430.com/">https://t430.com</a>
+          </p>
           <p></p>
         </div>
 
         <div class="tags">
           <span>Nuxt.js</span>
-          <span>Vue.js</span>
+          <span>WordPress</span>
+          <span>reCAPTCHA</span>
+          <span>PHP</span>
           <span>Design</span>
+        </div>
+
+        <div class="works__images">
+          <div class="img">
+            <img src="/images/work__430__img--1.jpg" alt />
+          </div>
+
+          <div class="img">
+            <img src="/images/work__430__img--9.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--14.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--13.jpg" alt />
+          </div>
+
+          <div class="img">
+            <img src="/images/work__430__img--10.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--11.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--12.jpg" alt />
+          </div>
+
+          <div class="img">
+            <img src="/images/work__430__img--2.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--3.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--4.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--5.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--6.jpg" alt />
+          </div>
+          <div class="img">
+            <img src="/images/work__430__img--8.jpg" alt />
+          </div>
+        </div>
+
+        <div class="back-to-list">
+          <nuxt-link to="/" class="button">BACK TO LIST</nuxt-link>
         </div>
       </div>
 
-      <div class="group">
+      <div class="group group--list">
         <works-list />
       </div>
     </div>
@@ -35,4 +106,66 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.work__detail {
+  padding-bottom: $gutter * 2;
+  border-bottom: 1px dashed $color-black;
+}
+.work__detail + .group {
+  margin-top: $gutter * 3;
+}
+h1.work__title {
+  padding: $gutter 0;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.work__description {
+  padding: 0 0 $gutter;
+  ul.featured {
+    list-style: circle;
+    padding: $gutter 0 $gutter 2em;
+
+    li {
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  p + p {
+    margin-top: $gutter;
+  }
+}
+.tags {
+  padding: 0 0 $gutter;
+}
+.works__cover {
+  padding: 0 0 $gutter;
+}
+
+.works__images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 $gutter;
+  .img {
+    @include flex-2-gutter;
+    margin-bottom: $gutter;
+  }
+  // .img + .img {
+  //   margin-top: $gutter;
+  // }
+}
+
+.back-to-list {
+  margin-top: $gutter * 2;
+}
+
+// ul.works__list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   li {
+//     flex-basis: 50%;
+//   }
+// }
+</style>

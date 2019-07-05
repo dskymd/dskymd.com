@@ -1,3 +1,13 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+
+  -webkit-overflow-scrolling: touch;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -15,16 +25,6 @@ html {
   box-sizing: border-box;
 }
 
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-
-  -webkit-overflow-scrolling: touch;
-}
-
 html.modalopened,
 body.modalopened {
   // for no-scroll when modal
@@ -39,6 +39,7 @@ body {
 }
 
 a {
+  color: $color-black;
   text-decoration: none;
 }
 
@@ -71,7 +72,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-playfair;
+  font-family: $font-roboto-slab;
+  font-weight: 400;
+  // font-family: $font-playfair;
   // font-family: $font-roboto;
 }
 
@@ -110,12 +113,21 @@ ul.list {
   @include display-flex;
 }
 
+p a {
+  color: $color-black;
+  text-decoration: underline;
+  &:hover,
+  &:active,
+  &:visited {
+    color: $color-black-hover;
+  }
+}
 
 a.button {
   width: 110px;
   // height: 54px;
   padding: 6px 12px;
-  color: $color-white;
+  color: $color-yellow;
   border: none;
   border-radius: 2px;
   background-color: $color-black;
@@ -166,6 +178,21 @@ a.button--disabled {
     color: #cccccc;
   }
 }
+
+
+.tags {
+  padding: $gutter / 1.5 0 0;
+  span {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0;
+    background-color: $color-black;
+    color: $color-yellow;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+}
+
 
 
 .page-enter-active,
@@ -248,6 +275,12 @@ a.button--disabled {
     // background-color: #FFF;
     background-color: $color-black;
     color: $color-yellow;
+  }
+
+
+  a.button {
+    color: $color-black;
+    background-color: $color-yellow;
   }
 
 
