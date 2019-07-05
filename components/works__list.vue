@@ -2,15 +2,32 @@
   <ul class="works__list">
     <li>
       <div class="item">
-        <nuxt-link to="works/430/">
+        <nuxt-link to="/works/430/">
           <div class="thumb">
             <img src="/images/works__430__thumb.jpg" alt="t430.com" />
           </div>
           <div class="item__card">
-            <nuxt-link to="works/430/">t430.com</nuxt-link>
+            t430.com
             <div class="tags">
               <span>Nuxt.js</span>
               <span>WordPress</span>
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <nuxt-link to="/works/430-contact/">
+          <div class="thumb">
+            <img src="/images/works__430-contact__thumb.jpg" alt="t430.com" />
+          </div>
+          <div class="item__card">
+            t430.com/contact
+            <div class="tags">
+              <span>Nuxt.js</span>
+              <span>reCAPTCHA</span>
+              <span>PHP</span>
             </div>
           </div>
         </nuxt-link>
@@ -84,37 +101,58 @@ ul.works__list {
   }
 }
 
+// as list at wotks dettail bottom
+.group--list {
+  ul.works__list {
+    // background-color: #f90000;
+    display: flex;
+    flex-wrap: wrap;
+    // li {
+    //   // @include flex-2-gutter;
+    // }
+  }
+}
+
 .item {
-  display: flex;
-  flex-wrap: wrap;
-  padding: $gutter;
-  background: $color-white;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
   height: 100%;
   // .item--video {
   // width: 100%;
   // background: $color-yellow3;
   // overflow: hidden;
   // }
-  .thumb {
-    width: 100%;
-    height: 260px;
-    overflow: hidden;
-    video {
-      -o-object-fit: cover;
-      object-fit: cover;
-      max-width: none;
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .item__card {
-    width: 100%;
-    background: $color-yellow;
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    background: $color-white;
+    display: inline-block;
     padding: $gutter;
-    font-size: 1.4rem;
-    a {
-      color: $color-black;
+    color: $color-black;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+
+    &:hover,
+    &:active {
+      box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+      // background: $color-text;
+    }
+
+    .thumb {
+      width: 100%;
+      height: 260px;
+      overflow: hidden;
+      video,
+      img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        max-width: none;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .item__card {
+      width: 100%;
+      background: $color-yellow;
+      padding: $gutter;
+      font-size: 1.4rem;
     }
   }
 }
