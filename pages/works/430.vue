@@ -86,15 +86,11 @@
           </div>
         </div>
 
-        <div class="back-to-list">
-          <nuxt-link to="/" class="button">BACK TO LIST</nuxt-link>
+        <div class="back-to-home">
+          <nuxt-link to="/" class="button">BACK TO HOME</nuxt-link>
         </div>
       </div>
-
-      <div class="group group--list other-works">
-        <h3>Other Works</h3>
-        <works-list />
-      </div>
+      <works-list-other />
     </div>
   </main>
 </template>
@@ -102,7 +98,7 @@
 <script>
 export default {
   components: {
-    worksList: () => import('~/components/works__list')
+    worksListOther: () => import('~/components/works__list--other')
   }
 }
 </script>

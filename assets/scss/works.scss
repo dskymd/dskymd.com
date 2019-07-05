@@ -40,13 +40,17 @@ h1.work__title {
   .img {
     @include flex-2-gutter;
     margin-bottom: $gutter;
+    &.img--full {
+      @include flex-1;
+      padding: 0;
+    }
   }
   // .img + .img {
   //   margin-top: $gutter;
   // }
 }
 
-.back-to-list {
+.back-to-home {
   margin-top: $gutter * 2;
 }
 

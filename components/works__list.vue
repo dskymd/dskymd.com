@@ -20,7 +20,7 @@
       <div class="item">
         <nuxt-link to="/works/430-contact/">
           <div class="thumb">
-            <img src="/images/works__430-contact__thumb.jpg" alt="t430.com" />
+            <img src="/images/works__430-contact__thumb.jpg" alt="t430.com/contact" />
           </div>
           <div class="item__card">
             t430.com/contact
@@ -28,6 +28,25 @@
               <span>Nuxt.js</span>
               <span>reCAPTCHA</span>
               <span>PHP</span>
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <nuxt-link to="/works/bl-bike-catalog/">
+          <div class="thumb">
+            <img src="/images/works__bl-bike-catalog__thumb.jpg" alt="BLUE LUG - BIKE CATALOG" />
+          </div>
+          <div class="item__card">
+            <!-- BLUE LUG -  -->
+            BIKE CATALOG
+            <div class="tags">
+              <span>Vue.js</span>
+              <!-- <span>JavaScript</span> -->
+              <span>WordPress</span>
+              <!-- <span>Flickr API</span> -->
             </div>
           </div>
         </nuxt-link>
@@ -128,6 +147,7 @@ ul.works__list {
     padding: $gutter;
     color: $color-black;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+    height: 100%;
 
     &:hover,
     &:active {

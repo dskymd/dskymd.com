@@ -172,6 +172,9 @@ $color-yellow4: #ffeb3b;
   display: flex;
   flex-wrap: wrap;
 }
+@mixin flex-1 { 
+  flex-basis: 100%;
+}
 @mixin flex-2 { 
   flex-basis: 50%;
 }
@@ -223,6 +226,7 @@ $color-yellow4: #ffeb3b;
 @mixin flex-24 { 
   flex-basis: 4.166%;
 }
+
 
 
 @mixin flex-2-gutter {
