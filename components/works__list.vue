@@ -2,18 +2,18 @@
   <ul class="works__list">
     <li>
       <div class="item">
-        <div class="thumb">
-          <nuxt-link to="works/430/">
+        <nuxt-link to="works/430/">
+          <div class="thumb">
             <img src="/images/works__430__thumb.jpg" alt="t430.com" />
-          </nuxt-link>
-        </div>
-        <div class="item__card">
-          <nuxt-link to="works/430/">t430.com</nuxt-link>
-          <div class="tags">
-            <span>Nuxt.js</span>
-            <span>WordPress</span>
           </div>
-        </div>
+          <div class="item__card">
+            <nuxt-link to="works/430/">t430.com</nuxt-link>
+            <div class="tags">
+              <span>Nuxt.js</span>
+              <span>WordPress</span>
+            </div>
+          </div>
+        </nuxt-link>
       </div>
     </li>
     <!-- <li>

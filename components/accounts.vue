@@ -40,6 +40,9 @@ export default {}
   li {
     padding: 0;
   }
+  img {
+    vertical-align: middle;
+  }
 }
 // li {}
 a {
