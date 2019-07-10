@@ -2,6 +2,25 @@
   <ul class="works__list">
     <li>
       <div class="item">
+        <nuxt-link to="/works/bl-bike-catalog/">
+          <div class="thumb">
+            <img src="/images/works__bl-bike-catalog__thumb.jpg" alt="BLUE LUG - BIKE CATALOG" />
+          </div>
+          <div class="item__card">
+            <!-- BLUE LUG -  -->
+            BIKE CATALOG
+            <div class="tags">
+              <span>Vue.js</span>
+              <!-- <span>JavaScript</span> -->
+              <span>WordPress</span>
+              <!-- <span>Flickr API</span> -->
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+    </li>
+    <li>
+      <div class="item">
         <nuxt-link to="/works/430/">
           <div class="thumb">
             <img src="/images/works__430__thumb.jpg" alt="t430.com" />
@@ -10,7 +29,7 @@
             t430.com
             <div class="tags">
               <span>Nuxt.js</span>
-              <span>WordPress</span>
+              <span>WP-REST</span>
             </div>
           </div>
         </nuxt-link>
@@ -33,25 +52,7 @@
         </nuxt-link>
       </div>
     </li>
-    <li>
-      <div class="item">
-        <nuxt-link to="/works/bl-bike-catalog/">
-          <div class="thumb">
-            <img src="/images/works__bl-bike-catalog__thumb.jpg" alt="BLUE LUG - BIKE CATALOG" />
-          </div>
-          <div class="item__card">
-            <!-- BLUE LUG -  -->
-            BIKE CATALOG
-            <div class="tags">
-              <span>Vue.js</span>
-              <!-- <span>JavaScript</span> -->
-              <span>WordPress</span>
-              <!-- <span>Flickr API</span> -->
-            </div>
-          </div>
-        </nuxt-link>
-      </div>
-    </li>
+
     <!-- <li>
       <div class="item item--video">
         <div class="thumb">

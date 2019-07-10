@@ -5,12 +5,33 @@ export default {
    */
   head: {
     title: process.env.npm_package_name || '',
+    htmlAttrs: {
+      lang: 'ja'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
+        content: process.env.npm_package_description || ''
+      },
+      { hid: 'og:title', property: 'og:title', content: 'dskymd.com Front-end Developper' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://dskymd.com' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://dskymd.com/images/ogp-card.jpg'
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'dskymd.com'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
         content: process.env.npm_package_description || ''
       }
     ],
