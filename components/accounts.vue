@@ -12,8 +12,8 @@
         </a>
       </li>
       <li>
-        <a href="https://note.mu/dskymd">
-          <img src="~/assets/images/icon__note-symbol--white.svg" alt="note" class="img__icon--note" />
+        <a href="https://github.com/dskymd">
+          <img src="~/assets/images/icon__github.svg" alt="github" class="img__icon img__icon--github" />
         </a>
       </li>
       <li>
@@ -21,6 +21,11 @@
           <img src="~/assets/images/icon__qiita--white.svg" alt="qiita" class="img__icon--qiita" />
         </a>
       </li>
+      <!-- <li>
+        <a href="https://note.mu/dskymd">
+          <img src="~/assets/images/icon__note-symbol--white.svg" alt="note" class="img__icon--note" />
+        </a>
+      </li>-->
     </ul>
   </div>
 </template>
