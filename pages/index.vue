@@ -40,7 +40,7 @@
           <ul class>
             <li>Date of Birth - 1982/4/13</li>
             <li>Born in Niigata, Japan</li>
-            <li>Work at Blue Lug Bike Shop</li>
+            <li>Work at Blue Lug Bike Shop as Front-end Engineer</li>
           </ul>
         </div>
       </div>
