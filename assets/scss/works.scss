@@ -28,6 +28,10 @@ h1.work__title {
 }
 .tags {
   padding: 0 0 $gutter;
+  span {
+    margin-right: $gutter / 5;
+    // border: solid 1px $color-black;
+  }
 }
 .works__cover {
   padding: 0 0 $gutter;
@@ -61,8 +65,6 @@ h1.work__title {
   }
 }
 
-
-
 // ul.works__list {
 //   display: flex;
 //   flex-wrap: wrap;
@@ -70,3 +72,14 @@ h1.work__title {
 //     flex-basis: 50%;
 //   }
 // }
+
+@media (prefers-color-scheme: dark) {
+  .tags {
+    padding: 0 0 $gutter;
+    span {
+      // background-color: $color-yellow;
+      // color: $color-black;
+      border: solid 1px $color-yellow;
+    }
+  }
+}

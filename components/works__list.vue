@@ -11,8 +11,8 @@
             BIKE CATALOG
             <div class="tags">
               <span>Vue.js</span>
-              <!-- <span>JavaScript</span> -->
-              <span>WordPress</span>
+              <span>JavaScript</span>
+              <!-- <span>WordPress</span> -->
               <!-- <span>Flickr API</span> -->
             </div>
           </div>
