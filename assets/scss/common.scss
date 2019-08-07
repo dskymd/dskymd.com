@@ -260,7 +260,7 @@ a.button--disabled {
     padding-top: $header-height--m + ($gutter * 2);
   }
 }
- 
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: $screen__l) {
@@ -285,6 +285,14 @@ a.button--disabled {
     background-color: $color-yellow;
   }
 
+  p {
+    a,
+    a:hover,
+    a:visited,
+    a:active {
+      color: $color-yellow4;
+    }
+  }
 
 
 }
