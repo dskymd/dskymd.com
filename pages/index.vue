@@ -9,7 +9,7 @@
           <ul class="skills__list list">
             <li>
               JavaScript
-              <span class="small">(Vue.js, Nuxt.js, TypeScript)</span>
+              <span class="small">(ES6, Vue.js, Nuxt.js, TypeScript)</span>
             </li>
             <li>
               HTML, CSS
