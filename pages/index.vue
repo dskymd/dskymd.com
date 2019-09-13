@@ -36,6 +36,20 @@
       </div>
 
       <div class="group">
+        <h1 class="group__title">OSS contributions</h1>
+        <div class="group__body">
+          <ul class>
+            <li>
+              <a href="https://developer.mozilla.org/ja/profiles/dskymd">Translation of MDN web docs</a>
+            </li>
+            <li>
+              <a href="https://github.com/nuxt/docs/pulls?utf8=✓&q=author%3Adskymd">Typo fix of Nuxt.js docs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="group">
         <h1 class="group__title">Profile</h1>
         <div class="group__body">
           <ul class>
