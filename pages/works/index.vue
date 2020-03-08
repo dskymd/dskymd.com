@@ -22,11 +22,7 @@
     ul.featured {
       list-style: circle;
       padding: $gutter 0 $gutter 2em;
-
-      li {
-      }
     }
-
     p {
       font-size: 1.2rem;
     }
@@ -34,9 +30,11 @@
       margin-top: $gutter;
     }
   }
+
   .tags {
     padding: 0 0 $gutter;
   }
+
   .works__cover {
     padding: 0 0 $gutter;
   }
@@ -49,21 +47,10 @@
       @include flex-2-gutter;
       margin-bottom: $gutter;
     }
-    // .img + .img {
-    //   margin-top: $gutter;
-    // }
   }
 
   .back-to-list {
     margin-top: $gutter * 2;
   }
 }
-
-// ul.works__list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   li {
-//     flex-basis: 50%;
-//   }
-// }
 </style>

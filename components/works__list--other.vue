@@ -16,4 +16,3 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/scss/works.scss';
 </style>
-\

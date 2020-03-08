@@ -10,7 +10,10 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "s3rm": "aws s3 rm s3://dskymd.com --recursive --profile=dskymd",
+    "s3cp": "aws s3 cp ./dist s3://dskymd.com/ --recursive --profile=dskymd",
+    "deploy": "npm run s3rm && npm run s3cp"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",

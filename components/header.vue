@@ -6,7 +6,7 @@
           <nuxt-link to="/">
             <span class="emoji">😗</span> dskymd
             <span class="emoji">😗</span>
-            <span class="small">Front-end Developer 🦐</span>
+            <!-- <span class="small">Front-end Developer 🦐</span> -->
           </nuxt-link>
         </h1>
         <div class="menu">
