@@ -21,9 +21,11 @@ export default {
   bottom: 0;
   padding: $gutter;
   background-color: $color-black; // $color-yellow;
+
   .container {
     text-align: center;
   }
+
   .copyrights {
     color: $color-gray;
   }
