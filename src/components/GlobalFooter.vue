@@ -7,29 +7,24 @@
       <ul class="accounts_list">
         <li>
           <a href="https://instagram.com/dskymd">
-            <img src="images/icon__instagram.svg" alt="instagram" class="icon" />
+            <img src="/images/icon__instagram.svg" alt="instagram" class="icon" />
           </a>
         </li>
         <li>
           <a href="https://github.com/dskymd">
-            <img src="images/icon__github.svg" alt="github" class="icon icon--github" />
+            <img src="/images/icon__github.svg" alt="github" class="icon icon--github" />
           </a>
         </li>
         <li>
           <a href="https://qiita.com/dskymd">
-            <img src="images/icon__qiita.svg" alt="qiita" class="icon icon--qiita" />
+            <img src="/images/icon__qiita.svg" alt="qiita" class="icon icon--qiita" />
           </a>
         </li>
         <li>
           <a href="https://twitter.com/dskymd">
-            <img src="images/icon__twitter.svg" alt="twitter" class="icon" />
+            <img src="/images/icon__twitter.svg" alt="twitter" class="icon" />
           </a>
         </li>
-        <!-- <li>
-        <a href="https://note.mu/dskymd">
-          <img src="assets/images/icon__note-symbol.svg" alt="note" class="icon--note" />
-        </a>
-      </li> -->
       </ul>
     </div>
   </footer>
