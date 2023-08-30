@@ -27,3 +27,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: | # dist配下をS3のバケットにデプロイ
           aws s3 cp --recursive --region ap-northeast-1 dist s3://dskymd.com
+
+      - name: Clear cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id E3TZRJ9Z6MR4WT --paths "/*"
+
