@@ -10,8 +10,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master  # リポジトリをチェックアウト
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: npm
+
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build
