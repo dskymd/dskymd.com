@@ -29,7 +29,7 @@ const htmlContent = ref(marked(md))
         <h3 class="group__title">Profile</h3>
         <div class="group__body">
           <ul class>
-            <li>Live in Tokyo, Born in Niigata, Japan</li>
+            <li>Born in Niigata, currently resides Tokyo, Japan</li>
             <li>Work at CloudSign as software engineer (Jan 2020 - Presnet)</li>
           </ul>
         </div>
