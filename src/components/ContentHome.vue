@@ -51,7 +51,7 @@ const htmlContent = ref(marked(md))
       </div>
 
       <div class="group">
-        <h3 class="group__title">Works</h3>
+        <h3 class="group__title">Projects</h3>
         <div class="description">
           <ul>
             <li><a href="https://t430.com">t430.com</a></li>
