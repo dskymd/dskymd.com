@@ -30,7 +30,7 @@ const htmlContent = ref(marked(md))
         <div class="group__body">
           <ul class>
             <li>Born in Niigata, currently resides in Tokyo, Japan</li>
-            <li>Work at CloudSign as software engineer (Jan 2020 - Presnet)</li>
+            <li>Work at CloudSign as software engineer (Jan 2020 - Present)</li>
           </ul>
         </div>
       </div>
@@ -54,7 +54,7 @@ const htmlContent = ref(marked(md))
         <h3 class="group__title">Projects</h3>
         <div class="description">
           <ul>
-            <li><a href="https://t430.com">t430.com</a></li>
+            <li><a href="https://t430.com">t430.com</a> - 2019, Nuxt.js, WordPress</li>
           </ul>
           <div class="text_content_body">
             <div v-html="htmlContent"></div>
