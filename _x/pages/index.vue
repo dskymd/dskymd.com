@@ -88,7 +88,7 @@ export default {
 .group {
   // display: grid;
   padding: 0;
-  margin: 0 0 $gutter * 4;
+  margin: 0 0 12rem;
 }
 .group__title {
   // flex-basis: 200px;

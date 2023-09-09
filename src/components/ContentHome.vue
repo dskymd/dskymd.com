@@ -37,7 +37,7 @@ const htmlContent = ref(marked(md))
 
 
       <div class="group">
-        <h3 class="group__title">Skills</h3>
+        <h3 class="group__title">Skill</h3>
         <div class="skills__body">
           <ul class="skills__list list">
             <li>
@@ -51,7 +51,7 @@ const htmlContent = ref(marked(md))
       </div>
 
       <div class="group">
-        <h3 class="group__title">Projects</h3>
+        <h3 class="group__title">Project</h3>
         <div class="description">
           <ul>
             <li><a href="https://t430.com">t430.com</a> - 2019, Nuxt.js, WordPress</li>
@@ -63,23 +63,20 @@ const htmlContent = ref(marked(md))
       </div>
 
 
-      <!-- <div class="group">
-        <h3 class="group__title">Favorites</h3>
+      <div class="group">
+        <h3 class="group__title">Blog</h3>
         <div class="group__body">
           <ul class="favorites__list">
-            <li class="emoji">🍉🍺🥦☕️</li>
-            <li>BMX, Bicycle🚲</li>
-            <li>Travel✈️</li>
-            <li>Climbing Mountains⛰</li>
-            <li>Radio📻🐒</li>
+            <li><a href="https://creators.bengo4.com/entry/2023/09/08/083000" rel="noreferrer">
+                長くなりがちだったコードレビューを改善した話</a></li>
           </ul>
         </div>
-      </div> -->
+      </div>
 
 
 
       <div class="group">
-        <h3 class="group__title">Contributions</h3>
+        <h3 class="group__title">Contribution</h3>
         <div class="group__body">
           <ul class>
             <li>
@@ -98,6 +95,13 @@ const htmlContent = ref(marked(md))
 
   
 <style scoped>
+
+
+.group {
+  margin: 0 0 4rem;
+}
+
+
 .text_content_body {
   display: none;
   padding: 2rem;
