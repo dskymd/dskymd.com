@@ -6,13 +6,13 @@ const canvasClock = ref<HTMLCanvasElement | undefined>()
 const stage = 1000 * 2
 const stageCenter = stage / 2
 const radius = 360 * 2 // 半径
-const angle360 = 360
+// const angle360 = 360
 const angle180 = 180
 
 const ctx = ref()
 
 // 放射線の数
-const indexNum = 360
+// const indexNum = 360
 
 type Point = {
   x: number
@@ -27,10 +27,10 @@ const calRadialPoint = (ang: number): Point => {
 }
 
 
-const isLong = (n: number) => {
-  const x = indexNum / 12
-  return n % x === 0
-}
+// const isLong = (n: number) => {
+//   const x = indexNum / 12
+//   return n % x === 0
+// }
 
 onMounted(() => {
 
