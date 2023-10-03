@@ -93,7 +93,7 @@ const htmlContent = ref(marked(md))
 
 
       <div class="group">
-        <h3 class="group__title">Time</h3>
+        <h3 class="group__title">Clock</h3>
         <div class="group__body">
           <SmallClock />
         </div>
