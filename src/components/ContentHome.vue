@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import { marked } from "marked";
 
+import SmallClock from '../components/SmallClock.vue'
+
 const md = `### readme
 ### hogege
 dsd
@@ -89,14 +91,21 @@ const htmlContent = ref(marked(md))
         </div>
       </div>
 
+
+      <div class="group">
+        <h3 class="group__title">Time</h3>
+        <div class="group__body">
+          <SmallClock />
+        </div>
+      </div>
+
+
     </div>
   </main>
 </template>
 
   
 <style scoped>
-
-
 .group {
   margin: 0 0 4rem;
 }
