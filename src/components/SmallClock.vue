@@ -41,7 +41,7 @@ import SmallClockBase from "../components/SmallClockBase.vue";
 
   .smallCloclWrapper {
     position: relative;
-    height: 1000px;
+    height: 300px;
   }
 
   .smallCloclWrapper canvas {

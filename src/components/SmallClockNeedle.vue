@@ -3,9 +3,9 @@ import { onMounted, ref } from 'vue';
 
 const canvasClock = ref<HTMLCanvasElement | undefined>()
 
-const stage = 1000 * 2
+const stage = 150 * 2
 const stageCenter = stage / 2
-const radius = 360 * 2 // 半径
+const radius = 72 * 2 // 半径
 // const angle360 = 360
 const angle180 = 180
 
@@ -45,7 +45,7 @@ const _draw = () => {
   ctx.value.clearRect(0, 0, canvasClock.value?.width, canvasClock.value?.height);
 
   ctx.value.strokeStyle = '#bbb'
-  ctx.value.lineWidth = 24
+  ctx.value.lineWidth = 4
 
   const offset1 = 0 * 2
   const offset2 = 100 * 2
@@ -87,11 +87,11 @@ const _draw = () => {
 
   // 秒針
   ctx.value.strokeStyle = '#D00'
-  ctx.value.lineWidth = 8
+  ctx.value.lineWidth = 2
 
   const p3 = calRadialPoint(angSeconds)
-  const p3x1 = p3.x * (0 - 100)
-  const p3y1 = p3.y * (0 - 100)
+  const p3x1 = p3.x * (0 - 36)
+  const p3y1 = p3.y * (0 - 36)
   const p3x2 = p3.x * (offsetBasis - offset3)
   const p3y2 = p3.y * (offsetBasis - offset3)
 
@@ -111,9 +111,9 @@ const _draw = () => {
   // 内円
   // ctx.value.strokeStyle = "#bbb";
   ctx.value.fillStyle = "#fff";
-  ctx.value.lineWidth = 8 * 3
+  ctx.value.lineWidth = 2 * 3
   ctx.value.beginPath()
-  ctx.value.arc(stageCenter, stageCenter, 8 * 2, Math.PI * 0, Math.PI * 2)
+  ctx.value.arc(stageCenter, stageCenter, 4 * 2, Math.PI * 0, Math.PI * 2)
   ctx.value.stroke()
   ctx.value.fill()
   // console.log('draw')
@@ -138,8 +138,7 @@ const draw = () => {
 
 
 <template>
-  <canvas width="2000" height="2000" class="canvasClock" ref="canvasClock"
-    style="width: 1000px; height: 1000px;"></canvas>
+  <canvas width="300" height="300" class="canvasClock" ref="canvasClock" style="width: 150px; height: 150px;"></canvas>
 </template>
 
 <style scoped>
