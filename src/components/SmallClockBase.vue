@@ -39,7 +39,7 @@ onMounted(() => {
 
   // 外円
   // ctx.fillStyle = "#f00";
-  ctx.strokeStyle = "#ccc";
+  ctx.strokeStyle = "#333";
   ctx.lineWidth = 2 * 2
   ctx.beginPath()
   ctx.arc(stageCenter, stageCenter, radius, Math.PI * 0, Math.PI * 2.5)
@@ -49,10 +49,10 @@ onMounted(() => {
 
 
   // 内円
-  ctx.strokeStyle = "#bbb";
+  ctx.strokeStyle = "#444";
   ctx.lineWidth = 8 * 2
   ctx.beginPath()
-  ctx.arc(stageCenter, stageCenter, radius * 0.90, Math.PI * 0, Math.PI * 2)
+  ctx.arc(stageCenter, stageCenter, radius * 0.88, Math.PI * 0, Math.PI * 2)
   ctx.stroke()
 
 
@@ -62,7 +62,7 @@ onMounted(() => {
     const ang = angle360 / indexNum * i // 角度を少し（=360/num）度づつ増やしていく
     const offset1 = 8 * 2
     const offset2 = 16 * 2
-    const offsetBasis = radius * 0.90
+    const offsetBasis = radius * 0.86
 
     const p = calRadialPoint(ang)
     const px1 = p.x * (offsetBasis - offset1)
@@ -72,7 +72,7 @@ onMounted(() => {
     const py2 = p.y * (offsetBasis - (isLong(i) ? offset2 * 1.1 : offset2))
 
     ctx.beginPath();
-    ctx.strokeStyle = isLong(i) ? "#333" : "#999";
+    ctx.strokeStyle = isLong(i) ? "#333" : "#666";
     ctx.lineWidth = 2; // isLong(i) ? 2 : 1
     ctx.moveTo(stageCenter + px1, stageCenter + py1);
     ctx.lineTo(stageCenter + px2, stageCenter + py2);

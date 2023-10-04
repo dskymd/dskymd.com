@@ -44,7 +44,7 @@ const _draw = () => {
 
   ctx.value.clearRect(0, 0, canvasClock.value?.width, canvasClock.value?.height);
 
-  ctx.value.strokeStyle = '#bbb'
+  ctx.value.strokeStyle = '#555'
   ctx.value.lineWidth = 4
 
   const offset1 = 0 * 2
@@ -86,7 +86,7 @@ const _draw = () => {
 
 
   // 秒針
-  ctx.value.strokeStyle = '#D00'
+  ctx.value.strokeStyle = '#333'
   ctx.value.lineWidth = 2
 
   const p3 = calRadialPoint(angSeconds)
@@ -110,7 +110,7 @@ const _draw = () => {
 
   // 内円
   // ctx.value.strokeStyle = "#bbb";
-  ctx.value.fillStyle = "#fff";
+  ctx.value.fillStyle = "#fcca0a"; // 背景色に合わせる
   ctx.value.lineWidth = 2 * 3
   ctx.value.beginPath()
   ctx.value.arc(stageCenter, stageCenter, 4 * 2, Math.PI * 0, Math.PI * 2)
