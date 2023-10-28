@@ -54,7 +54,7 @@ const _draw = () => {
 
   // new Date
   const dt = new Date()
-  const angHour = 30 * (-1 * dt.getHours() % 12) - 180
+  const angHour = 30 * (-1 * dt.getHours() % 12)
   const angHourMinute = 30 * (dt.getHours() / 60)
   const angMinute = 180 - 6 * dt.getMinutes()
   const angSeconds = 180 - 6 * dt.getSeconds()
